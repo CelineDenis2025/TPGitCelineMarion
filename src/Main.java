@@ -22,4 +22,6 @@ void main() {
 	utilisateurs.afficherTous();
 
 
+	System.out.println("Liste des utilisateurs :");
+	utilisateurs.rechercherTous();
 }
