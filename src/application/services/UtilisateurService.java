@@ -3,6 +3,8 @@ package application.services;
 import application.domaine.Utilisateur;
 import application.repositories.UtilisateurRepository;
 
+import java.util.List;
+
 public class UtilisateurService {
 
 	private final UtilisateurRepository utilisateurRepository;
