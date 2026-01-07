@@ -13,6 +13,7 @@ public class Utilisateur {
 		this.courriel = courriel;
 	}
 
+
 	public String getIdentifiant() {
 		return identifiant;
 	}
@@ -43,5 +44,14 @@ public class Utilisateur {
 
 	public void setCourriel(String courriel) {
 		this.courriel = courriel;
+	}
+
+	@Override
+	public String toString() {
+		return "Utilisateur : " +
+				"identifiant = " + identifiant +
+				", nom = " + nom +
+				", prénom = " + prenom +
+				", courriel = " + courriel + ".\n";
 	}
 }

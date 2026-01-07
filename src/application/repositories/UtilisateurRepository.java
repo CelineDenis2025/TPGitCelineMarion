@@ -23,5 +23,4 @@ public class UtilisateurRepository {
 	public void setUtilisateurs(List<Utilisateur> utilisateurs) {
 		this.utilisateurs = utilisateurs;
 	}
-
 }
