@@ -21,4 +21,12 @@ public class TacheRepository {
 		taches.add(new Tache(9, "Optimisation des performances", Etat.NON_ASSIGNEE, null));
 		taches.add(new Tache(10, "Déploiement en production", Etat.NON_ASSIGNEE, null));
 	}
+
+	public List<Tache> getTaches() {
+		return taches;
+	}
+
+	public void setTaches(List<Tache> taches) {
+		this.taches = taches;
+	}
 }
