@@ -16,4 +16,10 @@ void main() {
 	utilisateurs.creerUtilisateur("Paulin", "Novotny");
 	utilisateurs.afficherTous();
 
+	// test modifier courriel
+	utilisateurs.afficherTous();
+	utilisateurs.modifierCourriel("pnovotny", "brigitte.bardot@mail.com");
+	utilisateurs.afficherTous();
+
+
 }

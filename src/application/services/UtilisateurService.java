@@ -34,5 +34,13 @@ public class UtilisateurService {
 	}
 
 
+	public void modifierCourriel(String identifiant, String courriel){
+		for (Utilisateur us :utilisateurRepository.getUtilisateurs()) {
+			if(us.getIdentifiant().equals(identifiant)){
+				us.setCourriel(courriel);
+			}
+		}
+	}
+
 
 }
