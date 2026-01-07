@@ -35,5 +35,8 @@ void main() {
 	// Test pour rechercherParUtilisateur
 	service.rechercherParUtilisateur("jdupont");
 
+	// test pour completerTache
+	service.completerTache("3");
+
 
 }

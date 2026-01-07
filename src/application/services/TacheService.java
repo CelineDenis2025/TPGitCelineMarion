@@ -51,4 +51,20 @@ public class TacheService {
 			IO.println("Aucune tâche assignée à l'utilisateur " + idUtilisateur);
 		}
 	}
+
+	public void completerTache(String idTache) {
+		int id = Integer.parseInt(idTache);
+		Tache tache = null;
+		for (Tache t : tacheRepository.getTaches()) {
+			if (t.getId() == id) {
+				tache = t;
+			}
+		}
+		if (tache == null) {
+			IO.println("Aucune tache trouvée avec l'id : " + idTache);
+			return;
+		}
+		tache.setEtat(Etat.TERMINEE);
+		IO.println("La tache " + idTache + " a été marquée comme TERMINEE.");
+	}
 }
