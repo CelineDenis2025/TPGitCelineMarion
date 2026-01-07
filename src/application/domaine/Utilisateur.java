@@ -44,4 +44,14 @@ public class Utilisateur {
 	public void setCourriel(String courriel) {
 		this.courriel = courriel;
 	}
+
+	@Override
+	public String toString() {
+		return "Utilisateur{" +
+				"identifiant='" + identifiant + '\'' +
+				", nom='" + nom + '\'' +
+				", prenom='" + prenom + '\'' +
+				", courriel='" + courriel + '\'' +
+				'}';
+	}
 }
