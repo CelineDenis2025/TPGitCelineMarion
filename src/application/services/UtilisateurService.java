@@ -1,6 +1,7 @@
 package application.services;
 
 import application.domaine.Utilisateur;
+import application.domaine.Utilisateur;
 import application.repositories.UtilisateurRepository;
 
 import java.util.List;
@@ -41,4 +42,14 @@ public class UtilisateurService {
 			IO.println(u);
 		}
 	}
+	public void modifierCourriel(String identifiant, String courriel){
+		for (Utilisateur us :utilisateurRepository.getUtilisateurs()) {
+			if(us.getIdentifiant().equals(identifiant)){
+				us.setCourriel(courriel);
+			}
+		}
+	}
+
+
+
 }
