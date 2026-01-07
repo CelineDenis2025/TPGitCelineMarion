@@ -32,5 +32,8 @@ void main() {
 	// Test pour assignation de tâche
 	service.assignerTache(3, "jdupont");
 
+	// Test pour rechercherParUtilisateur
+	service.rechercherParUtilisateur("jdupont");
+
 
 }

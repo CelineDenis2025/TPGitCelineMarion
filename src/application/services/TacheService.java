@@ -37,4 +37,18 @@ public class TacheService {
 		tache.setEtat(Etat.EN_COURS);
 		IO.println("Tâche " + idTache + " assignée à " + idUtilisateur + " et passée à EN_COURS.");
 	}
+
+	public void rechercherParUtilisateur(String idUtilisateur) {
+		boolean trouve = false;
+
+		for (Tache t : tacheRepository.getTaches()) {
+			if (idUtilisateur.equals(t.getIdUtilisateurAssigne())) {
+				IO.println(t);
+				trouve = true;
+			}
+		}
+		if (!trouve) {
+			IO.println("Aucune tâche assignée à l'utilisateur " + idUtilisateur);
+		}
+	}
 }
