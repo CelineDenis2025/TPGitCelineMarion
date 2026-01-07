@@ -24,4 +24,9 @@ void main() {
 
 	System.out.println("Liste des utilisateurs :");
 	utilisateurs.rechercherTous();
+
+	//test pour création Tache
+	TacheService service = new TacheService();
+	service.creerTache("Nouvelle fonctionnalité");
+
 }
