@@ -29,4 +29,8 @@ void main() {
 	TacheService service = new TacheService();
 	service.creerTache("Nouvelle fonctionnalité");
 
+	// Test pour assignation de tâche
+	service.assignerTache(3, "jdupont");
+
+
 }

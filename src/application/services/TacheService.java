@@ -20,4 +20,21 @@ public class TacheService {
 		tacheRepository.getTaches().add(nouvelleTache);
 		IO.println("Tache créé : " + nouvelleTache);
 	}
+
+	public void assignerTache(int idTache, String idUtilisateur) {
+		Tache tache = null;
+		for (Tache t : tacheRepository.getTaches()) {
+			if (t.getId() == idTache) {
+				tache = t;
+			}
+		}
+		if (tache == null) {
+			IO.println("Erreur: aucune tâche avec l'ID " + idTache);
+			return;
+		}
+		tache.setIdUtilisateurAssigne(idUtilisateur);
+
+		tache.setEtat(Etat.EN_COURS);
+		IO.println("Tâche " + idTache + " assignée à " + idUtilisateur + " et passée à EN_COURS.");
+	}
 }
