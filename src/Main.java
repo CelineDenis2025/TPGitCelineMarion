@@ -5,7 +5,6 @@ import application.services.TacheService;
 import application.services.UtilisateurService;
 
 void main() {
-	UtilisateurRepository utilisateurRepository = new UtilisateurRepository();
 
 	TacheService taches = new TacheService();
 	UtilisateurService utilisateurs = new UtilisateurService();
@@ -14,6 +13,7 @@ void main() {
 	//Placez vos appels de méthodes ici
 
 	// Test créer un utilisateur
-	// utilisateurs.creerUtilisateur("Paulin", "Novotny");
-	IO.println(utilisateurRepository.getUtilisateurs());
+	utilisateurs.creerUtilisateur("Paulin", "Novotny");
+	utilisateurs.afficherTous();
+
 }
